@@ -1,0 +1,26 @@
+# FastAPI core
+fastapi
+uvicorn[standard]
+
+# Database (async)
+sqlalchemy[asyncio]
+aiosqlite  # Use 'asyncpg' or 'aiomysql' for PostgreSQL/MySQL respectively
+
+# Database migrations
+alembic
+aiomysql
+
+
+# Auth & Security
+python-jose[cryptography]  # For JWT
+passlib[bcrypt]            # For password hashing
+
+# Pydantic for settings management
+pydantic
+python-dotenv              # For reading .env files
+
+# Optional (Cross-Origin)
+starlette
+
+# Dev tools
+httpx                      # For async HTTP client in tests
